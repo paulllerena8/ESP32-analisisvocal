@@ -66,9 +66,9 @@ void setup(void){
     Serial.println("Falló la configuración de WiFi STATION "); 
   } 
 
-WiFiManager wifiManager;
-//wifiManager.resetSettings();
-wifiManager.autoConnect("ESP32-Ucuenca-WiFi");
+WiFiManager wifiManager;  
+//wifiManager.resetSettings();                     //Se utiliza la librería WiFi Manager para permitir al usuario configurar el nombre y contraseña de la red
+wifiManager.autoConnect("ESP32-Ucuenca-WiFi");     //Nombre de la red del ESP32 como AP
 
 
 digitalWrite(22,HIGH); // Cuando la conexión es satisfactoria el pin 22 se pone en alto.
